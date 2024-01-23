@@ -12,6 +12,15 @@ export default {
       },
       colors: {
         "main-dark":"#202020"
+      },
+      keyframes:{
+        scared:{
+          "0%, 100%":{transform: "scale(1)"},
+          "50%":{transform:"scale(1.04)"}
+        }
+      },
+      animation:{
+        scared:"scared 2s ease-in-out infinite"
       }
     },
   },
