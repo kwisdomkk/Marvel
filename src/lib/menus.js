@@ -1,32 +1,47 @@
  export const testimonials=[
-  {
-    image:"https://images.unsplash.com/photo-1704739339246-6f0fa34f754f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D",
+  { logoImage:"https://cdn.marvel.com/content/1x/echo_lob_log_eye_01_0.png",
+    image:"https://cdn.marvel.com/content/1x/echo_0109_com_mas_dsk_01.jpg",
     title:"Echo Now Streaming",
-    text:"자세히 보기",
-    link:"https://www.daum.net"
+    sub:"Stream the 5-episode event now!",
+    text:"Stream on Hulu",
+    link:"https://www.hulu.com/series/41c5abe9-cbe0-4c10-8aa6-c8286593b1b9"
   },
   {
-    image:"https://images.unsplash.com/photo-1682686578615-39549501dd08?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyMXx8fGVufDB8fHx8fA%3D%3D",
+    image:"https://cdn.marvel.com/content/1x/stormmagneto_com_mas_dsk_01.jpg",
     title:"This Week's New Comics",
-    text:"자세히 보기2",
-    link:"https://www.daum.net"
+    sub:"This Week's New Comics",
+    sub2:"Join Storm's search for Magneto, behold the battle for Beast's soul, see Spider-Woman strike back in 'Gang War,' and more in this week's comics!",
+    text:"SEE MORE",
+    link:"https://www.marvel.com/articles/comics/january-24-2024-new-marvel-comics-collections-releases-full-list"
   },
   {
-    image:"https://images.unsplash.com/photo-1682687221175-fd40bbafe6ca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw0MXx8fGVufDB8fHx8fA%3D%3D",
+    logoImage:"https://cdn.marvel.com/content/1x/whatifs2_log_eye_02.png",
+    image:"https://cdn.marvel.com/content/1x/watchers9days_com_mas_dsk_01.jpg",
     title:"What If...? Season 2",
-    text:"자세히 보기3",
-    link:"https://www.daum.net"
+    // text:"UNLOCK NOW",
+    sub:"The Watcher's Nine Days of What If...?",
+    sub2:"Check back each day at 9am PST for new reveals and exclusive gifts as we watch Season 2 of Marvel Studios’ What If…? Now streaming on Disney+.",
+    btn1:"UNLOCK NOW",
+    link1:"https://www.marvel.com/9daysofwhatif",
+    btn2:"Stream on Disney+",
+    link2:"https://www.disneyplus.com/ko-kr/series/details/7672ZVj1ZxU9?cid=DTCI-Synergy-Marvel-Site-Acquisition-Originals-US-Marvel-WhatIf-EN-Homepage-Marvel_Homepage_WhatIf-NA"
   },
   {
-    image:"https://plus.unsplash.com/premium_photo-1703689533862-166b2986cf8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0N3x8fGVufDB8fHx8fA%3D%3D",
+    logoImage:"https://cdn.marvel.com/content/1x/mulogo_lob_log_eye_01_1.png",
+    image:"https://cdn.marvel.com/content/1x/echo_mu_com_mas_dsk_01.jpg",
     title:"Echo Comics to Read",
-    text:"자세히 보기4",
-    link:"https://www.daum.net"
+    sub:"Echo Comics to Read",
+    sub2:"Read our Echo comic picks on Marvel Unlimited ahead of the series premiere on January 10!",
+    text:"READ MORE",
+    link:"https://www.marvel.com/articles/comics/comics-to-read-on-marvel-unlimited-ahead-of-marvel-studios-echo"
   },
   {
-    image:"https://plus.unsplash.com/premium_photo-1704546741925-63f7c58d8ae7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D",
+    logoImage:"https://cdn.marvel.com/content/1x/marvelsblade_lob_log_eye_01.png",
+    image:"https://cdn.marvel.com/content/1x/marvelsblade_lob_mas_dsk_01.jpg",
     title:"'Marvel's Blade' in Development",
-    text:"자세히 보기5",
-    link:"https://www.daum.net"
+    sub:"Announcement Trailer",
+    sub2:"Watch the Game Awards 2023 trailer for 'Marvel's Blade' now!",
+    text:"WATCH NOW",
+    link:"https://www.marvel.com/articles/games/marvels-blade-game-in-development-bethesda-softworks-arkane-lyon-announcement-trailert"
   }
 ]
