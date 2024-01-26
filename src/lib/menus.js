@@ -42,6 +42,6 @@
     sub:"Announcement Trailer",
     sub2:"Watch the Game Awards 2023 trailer for 'Marvel's Blade' now!",
     text:"WATCH NOW",
-    link:"https://www.marvel.com/articles/games/marvels-blade-game-in-development-bethesda-softworks-arkane-lyon-announcement-trailert"
+    link:"https://www.marvel.com/articles/games/marvels-blade-game-in-development-bethesda-softworks-arkane-lyon-announcement-trailer"
   }
 ]

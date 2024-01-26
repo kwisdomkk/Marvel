@@ -94,7 +94,7 @@ export default function MainSlide() {
     {/* notice disney */}
     <NoticeDisney/>
     {/* 그림영역 */}
-    <div className="relative w-full h-[450px]">
+    <div className="relative w-full h-[570px]">
       {
         testimonials.map((item,index)=>(
           //5개중의 1개 아이템
