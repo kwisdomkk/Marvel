@@ -11,3 +11,14 @@ export async function apiGetComics(){
     }
   ).then((res)=>res.json());
 }
+
+// [GET] Events 리스트
+export async function apiGetEvents(){
+  return await fetch(`${BASE_URL}/events?limit=10&apikey=${API_KEY}`,{
+    method:"GET",
+    headers: {
+      "Content-Type": "application/json",
+      },
+    }
+  ).then((res)=>res.json());
+}
