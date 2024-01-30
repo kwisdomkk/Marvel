@@ -20,7 +20,7 @@ import TitleRotate from "../components/TitleRotate";
     if(!isLoadingEvents){
       events=dataEvents?.data.results;
     }
-    console.log(events[0])
+  
 
     
   return (
@@ -43,13 +43,13 @@ import TitleRotate from "../components/TitleRotate";
             <TitleRotate text="The Events"/>
             {/* 이벤트 API에서 불러오기 */}
             <div className="w-full">
-            {events.map((event,index)=>(
+            {events?.map((event,index)=>(
               <div key={index}>
                 <div className="w-full h-[260px] m-5 flex">
                   <div className="w-1/2 h-[260px]">
                     <img className="w-full h-full object-cover object-center" src={`${event.thumbnail?.path}.${event.thumbnail?.extension}`}/>
                   </div>
-                  <div className="w-1/2 h-[260px] bg-violet-200 space-y-5">
+                  <div className="w-1/2 h-[260px] space-y-5">
                     <div>{event.title}</div>
                     <div>{event.description}</div>
                   </div>
