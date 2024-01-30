@@ -1,7 +1,7 @@
 import Button from "./Button";
 import TitleRotate from "./TitleRotate";
 
-export default function TitleImageBox({ imgUrl }) {
+export default function TitleImageBox({ imgUrl,mainTitle,subTitle,description,btnTxt }) {
   return (
     <section className="w-full">
       {/* 이미지로 된 타이틀 */}
@@ -30,13 +30,13 @@ export default function TitleImageBox({ imgUrl }) {
             <div className="space-y-2">
               <img src="https://cdn.marvel.com/content/1x/mulogo_lob_log_eye_01_1.png"/>
               {/* 사선으로 된 제목 */}
-              <TitleRotate text="available now!!!" />
+              <TitleRotate text={mainTitle} />
               <h1 className="text-4xl font-bold uppercase">
-                new on marvel unlimited
+                {subTitle}
               </h1>
-              <p>Read these plus 30,000+ digital comics for $9.99 a month!</p>
+              <p>{description}</p>
             </div>
-            <Button outline="outline" text="get involved unlimited" />
+            <Button outline="outline" text={btnTxt} />
           </div>
         </div>
       </div>
