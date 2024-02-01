@@ -38,7 +38,7 @@ export default function Header() {
      bg-main-dark text-white space-x-8 text-xs items-center font-semibold">
       <p>NEWS</p>
       <p>COMICS</p>
-      <Link to=""characters><p>CHARACTERS</p></Link>
+      <Link to="Characters"><p>CHARACTERS</p></Link>
       <p>MOVIES</p>
       <p>TV SHOWS</p>
       <p>GAMES</p>
