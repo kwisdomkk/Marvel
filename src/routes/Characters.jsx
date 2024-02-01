@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import TitleRotate from "../components/TitleRotate";
 import { apiGetCharacters } from "../api";
 import { ScaleLoader } from "react-spinners";
+import { Link } from "react-router-dom";
 
 export default function Characters() {
   let characters;
@@ -33,6 +34,7 @@ export default function Characters() {
           <div className="w-full flex justify-center py-16"><ScaleLoader color="red"/></div>):(<div className="grid grid-cols-6 gap-4">
           {characters?.map((item,index)=>(
             <div key={index} className="h-[340px] group cursor-pointer">
+              <Link to={`/characters/${item.id}`}>
               <div style={{
                 clipPath: "polygon(100% 0, 100% 89%, 85% 100%, 0 100%, 0 0)"
               }} className="w-full h-full flex flex-col bg-red-600">
@@ -50,6 +52,7 @@ export default function Characters() {
                   <div className="w-full duration-300 h-[95%] group-hover:h-0 bg-main-dark"></div>
               </div>
             </div>
+            </Link>
           </div>
           ))}
         </div>

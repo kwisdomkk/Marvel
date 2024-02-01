@@ -14,6 +14,13 @@ export default function Comics() {
     <section className="w-full flex justify-center">
       <div className="max-w-7xl w-full">  
         <TitleRotate text="JANUARY 31: NEW RELEASES"/>
+        <div className="w-[195px] h-[280px] bg-violet-300">
+        <img className="w-full h-full object-cover object-center"
+          src={`${item.thumbnail?.path}.${item.thumbnail?.extension}`} alt="comic_image"/>
+        </div>
+      </div>
+      <div>
+
       </div>
     </section>
   </Layout>

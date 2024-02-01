@@ -38,3 +38,19 @@ export async function apiGetCharacters({queryKey}){
     console.log(error)
   }
 }
+  //[GET] Characters detail
+  //params:id
+  export async function apiGetCharacterDetail({queryKey}){
+    const id=queryKey[1].id
+    try{
+      return await fetch(`${BASE_URL}/characters/${id}?&apikey=${API_KEY}`,{
+        method:"GET",
+        headers: {
+          "Content-Type": "application/json",
+          },
+        }
+      ).then((res)=>res.json());
+    }catch(error){
+      console.log(error)
+    }
+  }
