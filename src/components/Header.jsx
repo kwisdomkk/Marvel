@@ -37,8 +37,8 @@ export default function Header() {
     <section className="w-full border border-gray-700 flex justify-center h-10
      bg-main-dark text-white space-x-8 text-xs items-center font-semibold">
       <p>NEWS</p>
-      <p>COMICS</p>
-      <Link to="Characters"><p>CHARACTERS</p></Link>
+      <Link to="/Comics"><p>COMICS</p></Link>
+      <Link to="/Characters"><p>CHARACTERS</p></Link>
       <p>MOVIES</p>
       <p>TV SHOWS</p>
       <p>GAMES</p>
