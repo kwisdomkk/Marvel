@@ -1,3 +1,5 @@
+import qs from "qs";
+
 const API_KEY=import.meta.env.VITE_API_KEY;
 const BASE_URL="https://gateway.marvel.com:443/v1/public"
 
@@ -54,3 +56,25 @@ export async function apiGetCharacters({queryKey}){
       console.log(error)
     }
   }
+
+  export async function apiPostEMail(data){
+    // const formData=new FormData()
+    // formData.append("name", data.name);
+    // formData.append("email",data.email);
+    // formData.append("message",data.message);
+    try{
+      return await fetch("https://script.google.com/macros/s/AKfycbw7bs_K9yxyGe61dLCa0AoX6gMQRNwqD8FA6aY5_G9lFWn8Jw6zyPLBUoUMsJ6uoGLF/exec",
+      {
+        method:"POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: qs.stringify(data),
+      }
+      ).then((res) => res.json());
+      }catch(error){
+      console.log(error)
+    }
+  }
+
+  

@@ -52,27 +52,42 @@ import Button from "../components/Button";
       <ListCarousel lists={lists}/>
 
       {/* 이벤트 */}
-      <section className="w-full flex justify-center">
-        <div className="max-w-7xl w-full grid grid-cols-[7fr_3fr]">
+      <section className="w-full flex justify-center px-4">
+        <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-[7fr_3fr] gap-16">
           {/* 1왼쪽 */}
           <div className="w-full h-full">
             {/* 타이틀 */}
             <TitleRotate text="The Events"/>
             {/* 이벤트 API에서 불러오기 */}
             <div className="w-full">
-            {events?.map((event,index)=>(
-              <div key={index}>
-                <div className="w-full h-[260px] my-10 flex space-x-5 ">
-                  <div className="w-1/2 h-[260px]">
-                    <img className="w-full h-full object-cover object-center" src={`${event.thumbnail?.path}.${event.thumbnail?.extension}`}/>
+              {events?.map((item, index) => (
+                <div
+                  key={index}
+                  className="w-full space-y-4 md:space-y-0 h-auto md:h-64 border-b-2 pb-4 mb-4 flex flex-col md:flex-row space-x-0 md:space-x-8 group cursor-pointer"
+                >
+                  {/* image */}
+                  <div className="w-full md:w-1/2 h-full">
+                    <img
+                      className="w-full h-full object-cover"
+                      src={`${item.thumbnail?.path}.${item.thumbnail?.extension}`}
+                      alt="event_image"
+                    />
                   </div>
-                  <div className="w-1/2 h-[260px] space-y-5">
-                    <div className="text-sm font-semibold text-slate-500">{event.title}</div>
-                    <div className="font-bold">{event.description}</div>
+                  {/* description */}
+                  <div className="w-full md:w-1/2 h-full">
+                    <h2 className="uppercase font-semibold group-hover:text-red-600 duration-500">
+                      {item.title}
+                    </h2>
+                    <p className="text-sm text-gray-500">{item.description}</p>
+                    <h3 className="italic text-sm">
+                      {item.start?.substr(0, 10)}
+                    </h3>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            <div className="w-full flex justify-center pb-8 pt-4">
+              <Button text="load more" outline="outline" />
             </div>
           </div>
           
@@ -124,8 +139,8 @@ import Button from "../components/Button";
       (<ListCarousel lists={characters}/>)}
 
       {/* 마블 인사이더 */}
-      <section className="w-full h-80 flex justify-center bg-black">
-        <div className="max-w-7xl w-full h-full grid grid-cols-[4fr_6fr]">
+      <section className="w-full h-auto md:h-80 flex justify-center bg-black">
+        <div className="max-w-7xl w-full h-full grid gird-cols-1 md:grid grid-cols-[4fr_6fr]">
           {/* 1 왼쪽 */}
           <div className="w-full h- full">
             <div className="w-full h-full">
@@ -134,7 +149,7 @@ import Button from "../components/Button";
             </div>
           </div>
           {/* 2 오른쪽 */}
-          <div className="w-full h- full flex flex-col text-white items-center justify-center space-y-2">
+          <div className="w-full py-8 h-full flex flex-col text-white items-center justify-center space-y-2">
               <h3 className="text-red-600 font-semibold">Marvel Insider</h3>
               <h4 className="text-2xl font-bold">Watch, Earn, Redeem!</h4>
               <p>Get rewarded for doing what you already do as a fan.</p>

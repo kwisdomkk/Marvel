@@ -26,12 +26,12 @@ export default function TitleImageBox({ imgUrl,mainTitle,subTitle,description,bt
         </div>
         {/* 절대포지션 부모요소 전체 선택 */}
         <div className="absolute top-0 left-0 w-full h-full flex justify-center">
-          <div className="max-w-7xl w-full h-full flex flex-col justify-center text-white space-y-4">
+          <div className="max-w-7xl px-4 w-full h-full flex flex-col justify-center text-white space-y-4">
             <div className="space-y-2">
               <img src="https://cdn.marvel.com/content/1x/mulogo_lob_log_eye_01_1.png"/>
               {/* 사선으로 된 제목 */}
               <TitleRotate text={mainTitle} />
-              <h1 className="text-4xl font-bold uppercase">
+              <h1 className="text-2xl md:text-4xl font-bold uppercase">
                 {subTitle}
               </h1>
               <p>{description}</p>

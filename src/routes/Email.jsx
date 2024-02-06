@@ -1,6 +1,9 @@
 import { useForm } from "react-hook-form";
 import Layout from "../components/Layout";
 import Layout7 from "../components/Layout7";
+import { useMutation } from "react-query";
+import { apiPostEMail } from "../api";
+
 
 
 export default function Email() {
@@ -8,9 +11,21 @@ export default function Email() {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm({ mode: "onChange" });
 
-  const onSubmit = (formData) => console.log(formData);
+  const {mutate,data,isLoading}=useMutation(apiPostEMail,{
+    onSuccess:()=>{
+      if(data.result === "success"){
+        reset();
+      }
+    }
+  });
+
+  const onSubmit=(formData)=>{
+    mutate(formData);
+  };
+
   return (
     <Layout>
       <Layout7>
@@ -85,8 +100,9 @@ export default function Email() {
             <button
               className="bg-red-600 text-white px-4 py-2 rounded"
               type="submit"
+              disabled={isLoading? true:false}
             >
-              전송하기
+              {isLoading?"전송중...":"전송하기"}
             </button>
           </form>
         </div>
