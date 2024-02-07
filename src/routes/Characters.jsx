@@ -31,7 +31,7 @@ export default function Characters() {
         {/* 제목 */}
         <TitleRotate text="featured character"/>
         {isLoading?(
-          <div className="w-full flex justify-center py-16"><ScaleLoader color="red"/></div>):(<div className="grid grid-cols-6 gap-4">
+          <div className="w-full flex justify-center py-16"><ScaleLoader color="red"/></div>):(<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {characters?.map((item,index)=>(
             <div key={index} className="h-[340px] group cursor-pointer">
               <Link to={`/characters/${item.id}`}>

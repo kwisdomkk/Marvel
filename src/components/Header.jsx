@@ -10,7 +10,7 @@ import MobileMenu from './MobileMenu';
 
 
 
-const MENUS=[
+export const MENUS=[
   {
     text:"news",
     href:"#",
@@ -87,12 +87,10 @@ export default function Header() {
         <div className="absolute h-full top-0 left-[50%] -translate-x-[50%]">
           <img className="h-full" src={LogoLarge} alt="logo-large"/>         
         </div>
-        
-       
       </div>
     </section>
     <div className="relative">
-      <section className="w-full border border-gray-700 flex justify-center h-10
+      <section className="w-full border border-gray-700 hidden md:flex justify-center h-10
       bg-main-dark text-white space-x-8 text-xs items-center font-semibold">
         {MENUS.map((item,index)=>(
           <NavLink menuOpen={menuOpen} setMenuOpen={setMenuOpen} setMenuContent={setMenuContent}  key={index} href={item.href} component={item.component}>
