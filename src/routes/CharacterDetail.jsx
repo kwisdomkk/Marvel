@@ -58,14 +58,16 @@ export default function CharacterDetail() {
       </div>
       <div className="w-full flex justify-center">
         <div className="max-w-7xl w-full h-80 flex">
-          <div className="bg-red-200 w-[40%] h-full flex items-center justify-center">
-            <div className="w-[80%] h-[80%] bg-slate-200">
-            <h2 >PRINT ISSUE</h2>
+          <div className="bg-[#E1E1E1] w-[40%] h-full flex items-center justify-center">
+            <div className="w-[80%] h-[80%]">
+            <h2>PRINT ISSUE</h2>
             </div>
           </div>
-          <div className="bg-blue-200 w-[60%] h-full">
-            <h2 className="top-">Digital Issue </h2>
-            <p>Read online or on your iPhone, iPad or Android Device</p>
+          <div className="bg-[#E1E1E1] w-[60%] h-full flex items-center justify-center">
+            <div className="w-[80%] h-[80%] ">
+              <h2>Digital Issue </h2>
+              <p>Read online or on your iPhone, iPad or Android Device</p>
+            </div>
           </div>
         </div>
       </div>

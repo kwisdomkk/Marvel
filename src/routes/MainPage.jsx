@@ -143,11 +143,11 @@ import Button from "../components/Button";
               <p className="text-2xl font-semibold">The Hype Box</p>
               <p className="text-sm">Can’t-miss news and updates from<br/> across the Marvel Universe!</p>
             </div>
-            <div className="w-full h-[900px] flex flex-col px-4">
+            <div className="w-full flex flex-col px-4">
               {dataEvents?.pages[0].data?.results?.slice(5, 10).map((event, index)=>(
                 <div key={index} className="w-full py-8 flex">
-                  <div className="w-[40%]">
-                    <img className="w-[90%] object-cover" src={`${event.thumbnail?.path}.${event.thumbnail?.extension}`}/></div>
+                  <div className="w-[40%] aspect-auto">
+                    <img className="w-[90%] aspect-video object-cover" src={`${event.thumbnail?.path}.${event.thumbnail?.extension}`}/></div>
                   <div className="w-[60%] px-4 space-y-2">
                     <div className=" text-sm font-semibold text-slate-500">
                       {event.title}
