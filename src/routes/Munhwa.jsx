@@ -8,6 +8,7 @@ export default function Munhwa() {
     data?.result.item.map((item,index)=>(
         <div key={index}>{item.ccbaMnm1[0]}</div>
     ))}
+    
   </div>;
   
 }
